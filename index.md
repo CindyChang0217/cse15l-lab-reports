@@ -23,4 +23,4 @@ hello world
 What's your favorite fruit?
 ```
 
-[Lab Report 1](https://cindychang0217.github.io/cse15l-lab-reports/lab-report-1-week-0.html)
+-[Lab Report 1](https://cindychang0217.github.io/cse15l-lab-reports/lab-report-1-week-0.html)
