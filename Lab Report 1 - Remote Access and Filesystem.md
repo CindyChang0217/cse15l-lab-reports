@@ -47,7 +47,7 @@ I skipped this step because my computer already has VScode installed when I was 
 >Step 6: Optimizing Remote Running
 * Delete the last line of code to make change to the file.
 * Compile and run the file and copy to the remote server using scp.
-* Login remote server from ssh and compile and run the file.
+* Login remote server from ssh and compile, and run the file.
 
 ![12](12.png)
 
