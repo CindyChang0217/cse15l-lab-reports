@@ -54,55 +54,18 @@ class SearchEngine {
 >First screenshot
 ![14](14.png)
 
-* HandleRequest method is called.
-
-* The input url is localhost:4000/add?s=apple
-
-* The class field str is an empty arraylist.
-
-* String[] parameter = [s,apple]
-
-* parameter[0]=s
-
-* parameter[1]=apple
-
-* By the time the request is done processing, str changes from an empty arraylist to an arraylist containing apple.
+HandleRequest method is called, and the input url passed to the method as the parameter is localhost:4000/add?s=apple. An empty arraylist is created. The if statement "if (url.getPath().contains("/add"))" is executed because the path of this url contains the keyword add. Then an array of string is created to split "s=apple" into "s" and "apple" based on "=" sign. Then the if statement checks that the first element of the array is "s", so it adds the second element "apple" into the arraylist. By the time the request is done processing, the arraylist changes from an empty arraylist to an arraylist containing apple.
 
 >Second screenshot
 ![15](15.png)
 
-* HandleRequest method is called.
+HandleRequest method is called, and the input url passed to the method as the parameter is localhost:4000/add?s=pineapple. The arraylist is now a list with one element apple inside. Then, the if statement "if (url.getPath().contains("/add"))" is executed because the path of this url contains the keyword add. Then an array of string is created to split "s=pineapple" into "s" and "pineapple" based on "=" sign. Then the if statement checks that the first element of the array is "s", so it adds the second element "pineapple" into the arraylist. By the time the request is done processing, the arraylist changes from an arraylist containing apple to an arraylist containing apple and pineapple.
 
-* The input url is localhost:4000/add?s=pineapple
-
-* The class field str is an arraylist containing apple.
-
-* String[] parameter = [s,pineapple]
-
-* parameter[0]=s
-
-* parameter[1]=pineapple
-
-* By the time the request is done processing, str changes from an arraylist containing apple to an arraylist containing apple and pineapple.
 
 > Third screenshot
 ![](16.png)
 
-* HandleRequest method is called.
-
-* The input url is localhost:4000/search?s=app
-
-* String[] parameter=[s,app]
-
-* parameter[0]=s
-
-* parameter[1]=app
-
-* The value of result changes from an empty arraylist to an arraylist containing apple and pineapple.
-
-* The string output changes from an empty string to a string with value apple pineapple.
-
-* The class field is an arraylist containing apple and pineapple.
+HandleRequest method is called, and the input url passed to the method as the parameter is localhost:4000/search?s=app. Then, the if statement "if (url.getPath().contains("/search"))" is executed because the path of this url contains the keyword search. Then an array of string is created to split "s=app" into "s" and "app" based on "=" sign. Then it checks that the first element of the array is "s", so it creates a new empty array. Then there is a for loop that iterate over the arraylist containing apple and pineapple, and checks if each element in the arraylist contains the keyword "app". Since both apple and pineapple contains "app", both of them are added to the new array just created. Then, an empty string is created. There is a for loop iterating over the new array, and add each element in the array to the empty string to form a final string containing both apple and pineapple. 
 
 Part 2
 >First bug
